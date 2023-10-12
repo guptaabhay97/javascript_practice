@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Find Repeted Numbers</p>
+    <div id="num"></div>
+<script>
+    let arr = [1,3,2,1,2,,3,2,2,1,2,3,2,1,2];
+    let count = 0;
+
+
+    function  findRepvalue() {
+        if (arr == 0) {
+            return 1;
+        }else{
+            for(let i=0; i<arr.length; i++){
+                if (arr[i] < 2) {
+                    count++;
+                }
+            }
+        }
+        return count ;
+    }
+    console.log(findRepvalue());
+
+</script>
+</body>
+</html>

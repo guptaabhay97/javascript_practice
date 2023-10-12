@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <p>Q1. At Array</p>
+        <script>
+            // const arr = ["abhay","mohit", "nipun", "harshit"];
+            // document.write("This is A One method : "+arr.at(2)+ "<br>") ;
+            // document.write("This is A Two method : "+ arr[1]);
+        </script>
+
+
+        <p>Q2. Array concat()</p>
+        <script>
+            // const arr = ["abhay","mohit"];
+            // const arr1 = ["nipun", "Harshit"];
+
+            // console.log(arr.concat(arr1))
+            // document.write(arr.concat(arr1)+"<br>")
+
+            // const result = arr.concat(arr1);
+            // document.write(result);
+            // console.log(result);
+        </script>
+
+        <p>Q3. The constructor Property</p>
+        <script>
+            // const arr = ["Abhay","Mohit","Nipun","harshit"];
+            // const arr1 = arr.constructor;
+            // document.write(arr1);
+        </script>
+
+        <p>Q4. The copyWithin() Method</p>
+        <script>
+            // const arr = ["abhay","mohit","nipun","Harshit"];
+            // document.write(arr + "<br>");
+            // document.write(arr.copyWithin(1,0) +" 1 , 0 " + "<br>");
+            // document.write(arr.copyWithin(1,0,2) +" 1 , 0 , 2 " + "<br>");
+            // document.write(arr.copyWithin(1,0,3) +" 1 , 0 , 3")
+        </script>
+        <p>Q5. The entries() Method</p>
+        <script>
+            // const arr = ["abhay","mohit",'nipun', "harshit"]
+            // const x = arr.entries()
+
+            // for (let z of x){
+            //     document.write(z + "<br> ");
+            // }
+        </script>
+        <p>Q6. The every() Method</p>
+        <script>
+            // const arr = [22,34,44,85,45,21];
+
+            // function checkAge(arr) {
+            //    return arr > 18;
+            // }
+            //     document.write(arr.every(checkAge));
+
+
+            // const students = [{name:"abhay", ans:"yes"},
+            //                  {name:"Nipun", ans:"yes"},
+            //                  {name:"harshit", ans:"yes"},
+            //                  {name:"Mohit", ans:"no"}
+            //                 ]
+            //     checkAns=(result, index, student )=>{
+            //         if(index === 0){
+            //             return true;
+            //         }else{
+            //             return(result.ans == student[index - 1 ].ans);
+            //         }
+            //     }
+            //     document.write(students.every(checkAns));
+        </script>
+
+        <p>Q7. The fill() Method</p>
+        <script>
+            // const arr = [1,2,3,5,5];
+            // arr.fill("4",3,4)
+            // document.write("with fill : ", arr, "<br>")
+            // const arr1 = [1,2,3,5,5];
+            // arr.fill(4)
+            // document.write("fill without start and ending position : ", arr, "<br>")
+        </script>
+
+        <p>Q8. The filter() Method</p>
+
+        <script>
+            // const age= [15,17,18,24,26,30];
+            
+            // checkAge=(ages)=>{
+            //     return ages >=18;
+            // }
+            // document.write(age.filter(checkAge));
+            
+        </script>
+        <p>Q9. The find() Method</p>
+        <script>
+            // const ages= [15,17,18,24,26,30];
+            // checkAge=(age)=>{
+            //     return age > 18 ;
+            // }
+            // document.write(ages.find(checkAge));
+
+        </script>
+
+        <p>Q10. The findIndex() Method</p>
+        <script>
+            // const ages= [15,17,18,24,26,30];
+            // checkAge=(age)=>{
+            //     return age > 18 ;
+            // }
+            // document.write(ages.findIndex(checkAge));
+
+        </script>
+        <p>Q11. The flat() Method</p>
+        <script>
+            // const arr = [9,8,7,[6,5,1,[4,3,2,[0,2]]]];
+            // const arrflat = arr.flat(3);
+            // const arrsort = arrflat.sort();
+            // console.log(arrsort[1]);
+        </script>
+
+        <p>Q11. The flatmap() Method</p>
+        <script>
+            // const arr1 = [
+            //     [2,3,6],
+            //     [4,5,6],
+            //     [7,8,9]
+            // ];
+
+            // const result = arr1.flatMap(function (arrs) {
+            //     return [
+            //         arrs[0] + arrs[1] + arrs[2]
+            //     ];
+            // });
+            // document.write(result);
+        </script>
+
+        <p>Q12. The forEach() Method</p>
+        <script>
+            // const a = ["abhay", "Mohit", "Nipun", "harshit"];
+            // const arr = [ [2,3,6],
+            //               [4,5,6],
+            //               [7,8,9]];
+            // let sum = 1;
+            // a.forEach( findValue =  (value, index) =>{
+            //     document.write(index +" : " + value + "<br> ")
+            // })
+
+            // arr.forEach(findValue);
+
+            // function findValue(value, index) {
+            //     sum *=value[0];
+            //     sum +=value[1]; 
+
+            // document.write(index +  " : " + "Total sum of all index : " + sum + "<br>");
+
+            // }
+            // document.write( "Total sum of all Array : " + sum.toFixed() + "<br>");
+        </script>
+        <p>Q13.  The Find Uppercase string</p>
+        <script>
+            // let str = "AbDvF";
+            // let space = "";
+
+            // for(let i=0; i<str.length; i++){
+            //     if (str.charCodeAt(i) >= 65 && str.charCodeAt(i) <= 90) {
+            //         space+=" 1";
+            //     }
+            // }
+            // document.write(space);
+            // console.log(space)
+
+        
+            
+        //    function findupper() {
+        //         let str = "AbDvF";
+        //         let str1 = Array.from(str);
+        //         // let str2 = str1.sort();
+        //         let space = "";
+
+        //         for(let i=0; i < str1.length; i++){
+        //             if(str.charCodeAt(i) >= 65 && str.charCodeAt(i) <= 90){
+        //             space+= " 1";
+        //             }
+        //         }
+        //         return[space];
+        //    }
+        //    let result = findupper();
+        //    document.write(result);  
+            
+        </script>
+
+        <p>Q14. The Array.from() Method</p>
+        <script>
+            // let text = "123456";
+            // let arr = Array.from(text);
+            // console.log(arr);
+        </script>
+
+        <p>Q15.The includes() Method</p>
+        <script>
+            // let arr = ["abhay", "mohit", "nipun", "harshit"];
+            // let arr1 = arr.includes("mohit", 1)
+            // document.write(arr1)
+        </script>
+
+        <p>Q16.The indexOf() Method</p>
+        <script>
+            // let arr = ["abhay", "mohit", "nipun", "harshit"];
+            // let arr1 = arr.indexOf("mohit");
+            // console.log(arr1);
+        </script>
+        <p>q17. The Array.isArray() Method</p>
+        <script>
+            // let arr = ["abhay", "mohit", "nipun", "harshit"];
+            // let result = Array.isArray(arr);
+            // document.write(result + "\n");
+            // console.log(result);
+
+            // let arr1 = "abhay, mohit, nipun, harshit";
+            // let result1 = Array.isArray(arr1);
+            // document.write(result1 );
+            // console.log(result1);
+        </script>
+        <p>Q18. join() returns an array as a string:</p>
+        <script>
+            // let arr = ["abhay", "mohit", "nipun", "harshit"];
+            // let result = arr.join(" ");
+            // document.write(result);
+        </script>
+        <p>Q19. The keys() Method</p>
+        <script>
+            // let arr = ["abhay", "mohit", "nipun", "harshit"];
+            // let result = arr.keys();
+            // text = "";
+            // for(let x of result){
+            //     text += x +"<br>";
+            // }
+            // document.write(text)
+        </script>
+        <p>Q20. The lastIndexOf() Method</p>
+        <script>
+            let arr = ["abhay", "mohit", "nipun", "harshit"];
+            let result = arr.lastIndexOf("nipun");
+            console.log(result)
+
+            
+            let arr1 = ["abhay", "mohit", "nipun", "harshit","abhay", "mohit"];
+            let result1 = arr1.lastIndexOf("abhay");
+            console.log(result1)
+        </script>
+
+    </body>
+</html>
