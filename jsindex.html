@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        let arr = [1,2,3,4,5];
+        let n = arr.length;
+        let resutl = 1;
+        function product(){
+
+            for(let i=0; i<n; i++)
+            resutl*=arr[i];
+            return resutl;
+
+        }document.write(parseInt(product()))
+    </script> -->
+    <!-- <script>
+        let arr = [1,2,3,5,6,7,9,8]
+        let n = arr.length;
+
+        
+        findValue = () =>{
+            if (n == 1) {
+                return 0;
+            }else if(arr[0] >= arr[1]){
+                return 0;
+            }else if(arr[n-1] >= arr[n-2]){
+                return n-1;
+            }else{
+                for(let i=1; i< n-1; i++){
+                    if(arr[i] >= arr[i-1] && arr[i] >= arr[i+1]){
+                        return i;
+                    }
+                }
+            }
+        }
+        document.write(findValue(arr, n) + "<br>");
+        document.write(Math.max(...arr));
+    </script> -->
+
+    <p>Find The Max Value</p>
+    <script>
+        let arr  = [1,2,3,4,91,8,7]
+        let n = arr.length;
+
+        function  findMaxValue(arr, n) {
+            if (n==1) {
+                return 0;
+            }else if(arr[0] >= arr[1]){
+                return 0;
+            }else if(arr[n-1] >= arr[n-2]){
+                return n-1;
+            }else{
+                for(let i=1; i<n-1; i++){
+                    if(arr[i] >= arr[i-1] && arr[i] >= arr[i+1]){
+                        return arr[i];
+                    }
+                }
+            }
+        }document.write(findMaxValue(arr, n));
+    </script>
+    <p>Find Factorial Number</p>
+    <script>
+        // !n = n*(n-1)
+        
+        // let f = 5;
+
+        // function findFactorial(f) {
+        //     if(f==0){
+        //         return 1;
+        //     }
+        //     return f*findFactorial(f-1);
+        // }document.write("factorial of " + f + " is " + findFactorial(f));
+
+        //Find Factorial Number  ternary operator 
+
+        // findFactorial =(f)=>{
+        //     return (f==1 || f==0)? 1 : f * findFactorial (f - 1);
+        // }
+        // document.write("factorial of " + f + " is " + findFactorial(f));
+    </script>
+    <p>find 2nd small value</p>
+    <script>
+
+        // let a = [9,8,1,3,4,6,5,"a","c","b"];
+        // let num = Number(a);
+        // a.sort();
+        // a.map(a => a * 2 );
+
+        // console.log(a)
+        // console.log("2nd small Value",a[1])
+
+        // let arr = [1,2,3,5,9,0,2,5];
+        // let small = Infinity;
+        // let secondMin = Infinity;
+
+        // for(let i=0; i< arr.length; i++){
+        //     if(arr[i] < small ){
+        //         secondMin = small;
+        //         small = arr[i];
+        //     }else if(arr[i]<secondMin){
+        //         secondMin = arr[i];
+        //     }
+        // }
+        // console.log(small);
+        // console.log(secondMin);
+
+
+
+        // let arr = [9,8,5,4,1,31,6,2];
+        // let min = Infinity
+        // let max = Infinity
+        
+        // for(let i=0; i<arr.length; i++){
+        //     if (arr[i] < min) {
+        //         max = min;
+        //         min = arr[i]
+        //     }else if(arr[i] < max){
+        //         max = arr[i];
+        //     }
+        // }console.log(min);
+        // console.log(max);
+        
+    </script>
+</body>
+</html>
